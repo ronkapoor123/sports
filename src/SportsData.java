@@ -12,6 +12,14 @@ public class SportsData {
         return Team;
     }
 
+    public String Team() {
+        return Team;
+    }
+
+    public Long totalMoney() {
+        return totalMoney;
+    }
+
     public void setTeam(String team) {
         Team = team;
     }
@@ -24,3 +32,4 @@ public class SportsData {
         this.totalMoney = totalMoney;
     }
 }
+

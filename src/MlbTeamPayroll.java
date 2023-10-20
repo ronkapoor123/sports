@@ -1,4 +1,13 @@
 public class MlbTeamPayroll extends SportsData{
+    public int rank() {
+        return rank;
+    }
+
+    public MlbTeamPayroll setRank(int rank) {
+        this.rank = rank;
+        return this;
+    }
+
     // fields
     private int rank;
     private long payroll;
@@ -14,7 +23,7 @@ public class MlbTeamPayroll extends SportsData{
 
     // methods
     public String toString() {
-        String description = "Team named" + teamNames + " is ranked " + rank;
+        String description = "Team named" + Names + " is ranked " + rank;
         return description;
     }
 

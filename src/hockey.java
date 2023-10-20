@@ -6,7 +6,8 @@ public class hockey {
     private Long defenseCash;
     private Long goalieCash;
 
-
+    private String teamNames;
 
 
 }
+

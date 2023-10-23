@@ -4,13 +4,11 @@ public class hockey extends SportsData{
     private Long defenseCash;
     private Long goalieCash;
 
-
-    public hockey(String team, Long totalMoney, Long forwardCash, Long defenseCash, Long goalieCash, String team1) {
+    public hockey(String team, Long totalMoney, Long forwardCash, Long defenseCash, Long goalieCash) {
         super(team, totalMoney);
         this.forwardCash = forwardCash;
         this.defenseCash = defenseCash;
         this.goalieCash = goalieCash;
-        Team = team1;
     }
 
     public Long getForwardCash() {
@@ -35,16 +33,6 @@ public class hockey extends SportsData{
 
     public void setGoalieCash(Long goalieCash) {
         this.goalieCash = goalieCash;
-    }
-
-    @Override
-    public String getTeam() {
-        return Team;
-    }
-
-    @Override
-    public void setTeam(String team) {
-        Team = team;
     }
 }
 

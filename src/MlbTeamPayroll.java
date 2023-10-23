@@ -14,6 +14,10 @@ public class MlbTeamPayroll extends SportsData{
     private long injuredreserve;
     private long retained;
 
+    public baseball(String team, Long payroll, Long injuredreserve, Long retained);
+
+    }
+
 
     //www.spotrac.com/mlb/payroll//;
 

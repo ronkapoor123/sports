@@ -34,5 +34,14 @@ public class hockey extends SportsData{
     public void setGoalieCash(Long goalieCash) {
         this.goalieCash = goalieCash;
     }
+
+    public String toString() {
+        return
+        "the team name is" +getTeam() + "The goalie gets paid" +getGoalieCash() + "the forward players get paid" +getForwardCash() + "the defense players get paid" +getDefenseCash() +"all together the team gets paid" +getTotalMoney();
+    }
+
+    public static void readData() {
+
+    }
 }
 

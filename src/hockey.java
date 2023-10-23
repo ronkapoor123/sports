@@ -4,7 +4,6 @@ public class hockey extends SportsData{
     private Long defenseCash;
     private Long goalieCash;
 
-    private String Team;
 
     public hockey(String team, Long totalMoney, Long forwardCash, Long defenseCash, Long goalieCash, String team1) {
         super(team, totalMoney);

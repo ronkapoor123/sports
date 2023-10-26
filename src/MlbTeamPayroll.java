@@ -107,7 +107,7 @@ public class MlbteamPayroll extends SportsData{
     // methods
     public String toString() {
         "The team name is "+getTeam()+ " The win percentage is."+ getwin()+ "The money in the injured reserve is"+getinjuredreserve()+ "The unspent money is" +getretained()+"The money for demoted people is"+getburied()+ "the money for suspended players is" +get;
-        return description;
+        return description;+
     }
 
     public static void readData() {

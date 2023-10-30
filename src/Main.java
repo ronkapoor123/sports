@@ -1,9 +1,8 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         //hockey hockey1 = new hockey();
         //System.out.println(hockey1);
 
-        MlbTeamPayroll payroll1 = new MlbTeamPayroll();
-        System.out.println(payroll1);
+        MlbteamPayroll.readData();
     }
 }

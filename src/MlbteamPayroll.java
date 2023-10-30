@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.Scanner;
 
 public class MlbteamPayroll extends SportsData{
@@ -95,7 +96,6 @@ public class MlbteamPayroll extends SportsData{
 
     public void setSuspended(long suspended) {
         this.suspended = suspended;
-        return this;
     }
 
     // methods
@@ -110,7 +110,7 @@ public class MlbteamPayroll extends SportsData{
     public static void readData() throws Exception {
         File dataFile = new File( "srcMLB Team Payroll");
         Scanner dataScanner = new Scanner(dataFile);
-        dataScanner.useDeLimiter("\t|\n") ;
+        dataScanner.useDelimiter("\t|\n") ;
         while (dataScanner.hasNext()){
             //get next chunk of data
         }

@@ -1,4 +1,4 @@
-public class MlbteamPayroll extends SportsData{
+public class MlbTeamPayroll extends SportsData{
 
     // fields
     private int rank;
@@ -87,7 +87,7 @@ public class MlbteamPayroll extends SportsData{
     }
     public long setburied() {
         this.buried = buried;
-        return this;
+        return buried;
     }
 
     public MlbteamPayroll setBuried(long buried) {
@@ -95,7 +95,7 @@ public class MlbteamPayroll extends SportsData{
         return this;
     }
 
-    public long suspended() {
+    public long getsuspended() {
         return suspended;
     }
 
@@ -116,4 +116,5 @@ public class MlbteamPayroll extends SportsData{
     public static void readData() {
 
     }
+}
 

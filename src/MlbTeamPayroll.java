@@ -89,11 +89,11 @@ public class MlbteamPayroll extends SportsData{
 
 
 
-    public long suspended() {
+    public long getsuspended() {
         return suspended;
     }
 
-    public MlbteamPayroll setSuspended(long suspended) {
+    public void setSuspended(long suspended) {
         this.suspended = suspended;
         return this;
     }
@@ -116,5 +116,5 @@ public class MlbteamPayroll extends SportsData{
         }
 
     }
-    };
+}
 

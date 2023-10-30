@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MlbteamPayroll extends SportsData{
 
     // fields
@@ -32,54 +34,48 @@ public class MlbteamPayroll extends SportsData{
         return rank;
     }
 
-    public MlbteamPayroll setRank(int rank) {
+    public void setRank(int rank) {
         this.rank = rank;
-        return this;
     }
 
     public float getwin() {
         return win;
     }
 
-    public MlbteamPayroll setWin(float win) {
+    public void setWin(float win) {
         this.win = win;
-        return this;
     }
 
     public int getroster() {
         return roster;
     }
 
-    public MlbteamPayroll setRoster(int roster) {
+    public void setRoster(int roster) {
         this.roster = roster;
-        return this;
     }
 
     public long getpayroll() {
         return payroll;
     }
 
-    public MlbteamPayroll setPayroll(long payroll) {
+    public void setPayroll(long payroll) {
         this.payroll = payroll;
-        return this;
     }
 
     public long getinjuredreserve() {
         return injuredreserve;
     }
 
-    public MlbteamPayroll setInjuredreserve(long injuredreserve) {
+    public void setInjuredreserve(long injuredreserve) {
         this.injuredreserve = injuredreserve;
-        return this;
     }
 
     public long getretained() {
         return retained;
     }
 
-    public MlbteamPayroll setRetained(long retained) {
+    public void setRetained(long retained) {
         this.retained = retained;
-        return this;
     }
 
     public long getburied() {
@@ -87,13 +83,11 @@ public class MlbteamPayroll extends SportsData{
     }
     public long setburied() {
         this.buried = buried;
-        return this;
+        return buried;
     }
 
-    public MlbteamPayroll setBuried(long buried) {
-        this.buried = buried;
-        return this;
-    }
+
+
 
     public long suspended() {
         return suspended;
@@ -113,7 +107,14 @@ public class MlbteamPayroll extends SportsData{
 
     }
 
-    public static void readData() {
+    public static void readData() throws Exception {
+        File dataFile = new File( "srcMLB Team Payroll");
+        Scanner dataScanner = new Scanner(dataFile);
+        dataScanner.useDeLimiter("\t|\n") ;
+        while (dataScanner.hasNext()){
+            //get next chunk of data
+        }
 
     }
+    };
 

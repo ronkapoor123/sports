@@ -1,3 +1,6 @@
+import java.io.File;
+import java.util.Scanner;
+
 public class hockey extends SportsData{
 
     private Long forwardCash;
@@ -41,6 +44,12 @@ public class hockey extends SportsData{
     }
 
     public static void readData() {
+        File dataFile = new File( "srcHockeyData");
+        Scanner dataScanner = new Scanner(dataFile);
+        dataScanner.useDelimiter("\t|\n") ;
+        while (dataScanner.hasNext()){
+            //get next chunk of data
+        }
 
     }
 }

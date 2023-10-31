@@ -40,15 +40,26 @@ public class hockey extends SportsData{
 
     public String toString() {
         return
-        "the team name is" +getTeam() + "The goalie gets paid" +getGoalieCash() + "the forward players get paid" +getForwardCash() + "the defense players get paid" +getDefenseCash() +"all together the team gets paid" +getTotalMoney();
+        "The team name is " +getTeam() + ". The goalie gets paid " +getGoalieCash() + ". The forward players get paid " +getForwardCash() + ". The defense players get paid " +getDefenseCash() +". All together the team gets paid " +getTotalMoney();
     }
 
-    public static void readData() {
-        File dataFile = new File( "srcHockeyData");
+    public static void readData() throws Exception{
+        File dataFile = new File( "src/HockeyData");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\t|\n") ;
         while (dataScanner.hasNext()){
             //get next chunk of data
+            String data1 = dataScanner.next();
+            System.out.println(data1);
+            String data2S = dataScanner.next();
+            System.out.println(data2S);
+            Long data2 = Long.parseLong(data2S);
+            long data3 = dataScanner.nextLong();
+            long data4 = dataScanner.nextLong();
+            long data5 = dataScanner.nextLong();
+
+            hockey hockeyData = new hockey(data1, data4, data2, data3, data5);
+            System.out.println(hockeyData);
         }
 
     }

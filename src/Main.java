@@ -3,6 +3,6 @@ public class Main {
         //hockey hockey1 = new hockey();
         //System.out.println(hockey1);
         hockey.readData();
-        //MlbteamPayroll.readData();
+        MlbteamPayroll.readData();
     }
 }
